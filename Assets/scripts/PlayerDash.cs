@@ -90,6 +90,7 @@ public class PlayerDash : BasicBit.VPlatformerMovement2D {
 		dashTime = Time.time + dashDuration;
 		++dashCount;
 		allowMovement = false;
+		grounded = false;
 	}
 
 	protected override void onJump(){
