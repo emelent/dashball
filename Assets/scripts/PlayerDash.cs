@@ -31,8 +31,6 @@ public class PlayerDash : BasicBit.VPlatformerMovement2D {
 	Gradient trailGradient;
 	SpriteRenderer spriteRenderer;
 	TrailRenderer trail;
-	AudioSource dashSound;
-	AudioSource jumpSound;
 
 	void Awake() {
 		onAwake();
@@ -43,8 +41,6 @@ public class PlayerDash : BasicBit.VPlatformerMovement2D {
 		trailGradient = trail.colorGradient;
 		trail.colorGradient  = dashGradient;
 		spriteRenderer.color = dashColor;
-		dashSound = transform.Find("DashSound").GetComponent<AudioSource>();
-		jumpSound = transform.Find("JumpSound").GetComponent<AudioSource>();
 	}
 	
 	void Update() {
@@ -84,7 +80,7 @@ public class PlayerDash : BasicBit.VPlatformerMovement2D {
 		spriteRenderer.color = defaultColor;
 		trail.colorGradient = trailGradient;
 		dashParticles.Play();
-		dashSound.Play();
+		GM.PlaySound("Dash");
 		dashing = true;
 		dashDir = new Vector2(inputH, inputV);
 		dashTime = Time.time + dashDuration;
@@ -94,7 +90,7 @@ public class PlayerDash : BasicBit.VPlatformerMovement2D {
 	}
 
 	protected override void onJump(){
-		jumpSound.Play();
+		GM.PlaySound("Jump");
 	}
 	void handleDash(){
 		if(!dashing) return;

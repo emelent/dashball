@@ -20,6 +20,7 @@ public class WaterScript : MonoBehaviour {
 		if(collider.tag == "Player"){
 			collider.GetComponent<PlayerDash>()
 				.inWater = false;
+			
 		}
 	}
 }

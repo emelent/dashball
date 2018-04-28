@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000144129742910}
   - component: {fileID: 114612145962516684}
+  - component: {fileID: 114652329721913124}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -54,3 +55,45 @@ MonoBehaviour:
   numLevels: 8
   nextLevelDelay: 1
   numBlocks: 0
+--- !u!114 &114652329721913124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1742311150855988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e420b4237ff164673b0482c66229a247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Dash
+    clip: {fileID: 8300000, guid: 4a576987e62ee4dfba540524d369241a, type: 3}
+    volume: 1
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0
+  - name: Jump
+    clip: {fileID: 8300000, guid: 481468a6a77d2432da8baef2c5340e6d, type: 3}
+    volume: 0.37
+    pitch: 1.5
+    randomVolume: 0
+    randomPitch: 0
+  - name: Platform
+    clip: {fileID: 8300000, guid: 2d2b1a4e2ded74b53863cf8d8056d6d9, type: 3}
+    volume: 1
+    pitch: 1.3
+    randomVolume: 0
+    randomPitch: 0
+  - name: WaterSplashIn
+    clip: {fileID: 8300000, guid: 92a1ab0e00fa142698af904197957b69, type: 3}
+    volume: 1
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0
+  - name: WaterSplashOut
+    clip: {fileID: 8300000, guid: 92a1ab0e00fa142698af904197957b69, type: 3}
+    volume: 1
+    pitch: 1.05
+    randomVolume: 0
+    randomPitch: 0

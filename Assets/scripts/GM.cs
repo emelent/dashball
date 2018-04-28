@@ -10,7 +10,8 @@ public class GM : MonoBehaviour {
 	public int numLevels = 2;
 	public float nextLevelDelay = 1f;
 	CameraShake cameraShake;
-	
+	AudioManager audioManager;
+
 	[SerializeField]
 	int numBlocks;
 	// Use this for initialization
@@ -19,6 +20,7 @@ public class GM : MonoBehaviour {
 			instance = this;
 		}
 		cameraShake = Camera.main.GetComponent<CameraShake>();
+		audioManager = GetComponent<AudioManager>();
 		instance.numBlocks = GameObject.FindGameObjectsWithTag("Platform").Length;
 	}
 
@@ -38,5 +40,9 @@ public class GM : MonoBehaviour {
 
 	public static void ShakeCamera(float amount, float duration){
 		instance.cameraShake.Shake(amount, duration);
+	}
+
+	public static void PlaySound(string name){
+		instance.audioManager.PlaySound(name);
 	}
 }
