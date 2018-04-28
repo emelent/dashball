@@ -12,7 +12,7 @@ namespace BasicBit
 		public int maxJumps = 1;
 		public float jumpForce = 10f;
 		public float yThreshold = 0.49f;
-		public string groundTag = "Ground";
+		public LayerMask whatIsGround;
 
 
 		[SerializeField]
@@ -55,7 +55,7 @@ namespace BasicBit
 		protected virtual void onJump(){}
 
 		protected virtual void groundCheck(Collision2D collision){
-			if(collision.collider.tag == groundTag){
+			if(rb.IsTouchingLayers(whatIsGround)){
 				for(int i=0; i < collision.contacts.Length; i++){
 					if(collision.contacts[i].normal.y > yThreshold){
 						grounded = true;

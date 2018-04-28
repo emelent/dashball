@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2a93d3b35804425b7c108f2a76b6dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numLevels: 8
+  numLevels: 12
   nextLevelDelay: 1
   numBlocks: 0
 --- !u!114 &114652329721913124

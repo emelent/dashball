@@ -29,3 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/dash/Level8.unity
     guid: a7454240c7b9a4ee3b94fe6cb9ad631e
+  - enabled: 1
+    path: Assets/scenes/dash/Level9.unity
+    guid: b7566d21f97f84c3fbe066832fe0f8e7
+  - enabled: 1
+    path: Assets/scenes/dash/Level10.unity
+    guid: 1e5dcd7f18e174bb7800fcf5cebb508c
+  - enabled: 1
+    path: Assets/scenes/dash/Level11.unity
+    guid: 27cee7e5c2b92413e8f0b5fa732f20c5
+  - enabled: 1
+    path: Assets/scenes/dash/Level12.unity
+    guid: 67ee4b1a56e0e4edcadf5719bd5a79e4

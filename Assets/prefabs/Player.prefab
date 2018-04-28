@@ -247,7 +247,9 @@ MonoBehaviour:
   maxJumps: 1
   jumpForce: 15
   yThreshold: 0.49
-  groundTag: Platform
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 1024
   grounded: 0
   jumpCount: 0
   motion: 0
