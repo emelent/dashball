@@ -24,4 +24,4 @@ Restart Level - Backspace
 
 Dash and Jump reset when you land on a block.
 
-[Play the game](https://dashball.surge.sh)
+[Play the game](https://emelent.itch.io/dashball)
